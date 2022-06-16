@@ -1,0 +1,18 @@
+
+
+
+def main (args:Array[String]): Unit={
+	println("FIBONACCI EN SCALA EN FUNCION LAMBDA")
+	println("introducir un valor a para la serie fibonacci: ")
+	val n = sacla.io.StdIn.readInt()
+
+	val l = List(1,1,2,3,5,8,13)
+
+	val fib = (x:Int, y:Int) => x + y 
+
+	println(fib(0, 1))
+	println(fib(1, 2))
+	println(fib(2, 3))
+	println(fib(3, 5))
+	
+
