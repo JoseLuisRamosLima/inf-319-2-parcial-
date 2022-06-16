@@ -1,0 +1,21 @@
+
+def fib(n):
+    def op(a, b):
+        return b, a+b
+    def combine(initial, op, n):
+        a, b = initial
+        for i in range(n):
+            a, b = op(a, b)
+        return b
+    if n == 0:  
+        return 0
+    if n == 1:
+        return 1
+    return combine((0,1), op, n - 1)
+
+
+print ("serie fibonacci en funcion orden superior")
+print fib(10)
+
+
+
