@@ -1,0 +1,30 @@
+
+main = loop 0 1
+
+loop :: Int -> Int -> IO()
+loop m n = do
+	print n 
+	let fib = m+n
+	if n < 100
+		then loop n fib 
+	else 
+		print "fin"
+
+
+fib :: Integer -> Integer
+fib 0 = 0 
+fib 1 = 1 
+fib n = fib(n-1) + fib(n-2)
+
+
+main = do
+	putStrLn "********fibonacci con recursivo********"
+	putStrLn "introducir numero "
+	print(fib 10)
+	
+
+
+
+
+
+
