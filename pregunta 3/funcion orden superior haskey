@@ -1,0 +1,9 @@
+--FUNCION FIBONACCI ORDEN SUPERIOR HASKKEY
+fib :: Integer -> Integer
+
+fib = 1+1 :(zipwith (+) fib(tail fib))
+
+main = do 
+	putstrLn "FUNCION ORDEN SUPERIOR HASKELL"
+	print(fib 4)
+
