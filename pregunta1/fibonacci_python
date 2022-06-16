@@ -1,1 +1,41 @@
 //serie fibonacci en python
+
+
+def fib():
+    x=0
+    y=1
+    c
+    while 1:
+        c=x+y
+        x=y
+        y=c
+        
+---------FIBONACCI RECURSIVO 
+
+def fib(n):
+    if n == 0:
+        return 0
+    if n == 1:
+        return 1 
+    return fib(n-1) + fib(n-2)
+
+if_name_ == '_main_':
+print("FIBONACCI RECURSIVO")
+fibonacci = fib(10)
+print('fibonacci de 10 terminos : ')
+print(fibonacci)
+print("FIBONACI ESTRUCTURADO")
+    g = fib()
+    max = int(raw_input("digite la cantidad que desea generar"))
+    for i in range(max):
+        print g.next(),
+
+
+
+
+
+
+
+
+
+
