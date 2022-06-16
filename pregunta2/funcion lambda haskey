@@ -1,0 +1,23 @@
+--FUNCIONES LAMBDA HASKELL 
+
+fibo :: Integer -> Integer
+
+fib = 1 : 1 : [a+b | (a,b) <- <zip fib (tail fib)]
+
+zip (x:xs) (y:ys) = (x,y) : zip xs ys
+zip xs ys =[]
+
+main = do
+
+	putStrLn "FIBONACCI CON FUNCIONES LAMBDA"
+	print(fib 10)
+
+
+
+
+
+
+
+
+
+
