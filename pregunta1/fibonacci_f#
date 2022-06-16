@@ -1,0 +1,23 @@
+/FIBONACCI SECUENCIAL 
+
+
+let fib n = 
+	let mutable a = 0
+	let mutable b = 0
+	seq{
+		0
+		1
+		for i in 1 (n-1) do
+			let c = a + b 
+			a = b
+			b = c
+			b
+	}
+
+let run = fib 10 
+
+
+
+// FIBONACCI RECURSIVO 
+
+let rec fib_re(n: int): int = fib(n-1) + fib_re(n-2)
