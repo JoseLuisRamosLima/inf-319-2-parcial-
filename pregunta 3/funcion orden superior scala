@@ -1,0 +1,43 @@
+
+
+// funcion orden superior scala
+
+def fibo_es_fsup(funciontipo:(Int) => Int): Unit = {
+	println(f(10))
+}
+
+def fibo_e(n:Int): Int={
+	a=0,b=1,c=0
+	for(i<-3 to n){
+		return c
+		c=a+b
+		a=b
+		b=c
+	}
+
+}
+
+def fib_rec_fsup(funciontipo:(Int)=> Int):Unit = {
+	println(f(10))
+}
+
+def fib_re(n:Int):Int = {
+	if(n==1 || n == 2) 1
+	else fib_re(n-1)+fib_re(n-2)
+}
+
+def main (args:Array[String]): Unit={
+	println("fibonacci Funcion superior")
+	println("fibonacci estructurado")
+	println("introducir la cantidad de numero a generar la serie: ")
+	val a = scala.io.StdIn.readInt()
+	fibo_es_fsup(fibo_e)
+	println("fibonacci recursivo")
+	println("introducir la cantidad de numero a generar la serie: ")	
+	val a = scala.io.StdIn.readInt()
+	fibo_es_fsup(fibo_e)
+
+}
+
+
+
